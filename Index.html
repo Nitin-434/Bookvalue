@@ -6,35 +6,40 @@
   <title>BookValue ₹ - Buy & Sell Old Books at Lowest Prices</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}body{font-family:'Poppins',sans-serif;background:#f8f9fc;color:#333;line-height:1.6}
+    *{margin:0;padding:0;box-sizing:border-box}body{font-family:'Poppins',sans-serif;background:#f8f9fc;color:#333;line-height:1.6}a{text-decoration:none;color:inherit}
     .navbar{display:flex;justify-content:space-between;align-items:center;padding:1rem 5%;background:white;box-shadow:0 2px 10px rgba(0,0,0,0.1);position:fixed;width:100%;top:0;z-index:1000}
-    .logo svg{width:160px;height:50px}.nav-links{display:flex;gap:2rem;align-items:center}
+    .logo svg{width:160px;height:50px}.nav-links{display:flex;gap:2rem;align-items:center}.nav-links a{font-weight:500}
     .btn-primary{background:#00ba7c;color:white;padding:10px 20px;border-radius:8px;border:none;font-weight:600;cursor:pointer}
     .hero{margin-top:80px;padding:5rem 5%;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;background:linear-gradient(135deg,#667eea,#764ba2);color:white;border-radius:0 0 50px 50px}
-    .hero h1{font-size:2.8rem}.highlight{color:#00ba7c}.hero-buttons{margin-top:2rem;display:flex;gap:1rem}
-    .btn-large{padding:15px 30px;border-radius:12px;font-size:1.1rem}.primary{background:#00ba7c}.secondary{background:transparent;border:2px solid white}
-    .hero-img{width:100%;border-radius:20px}.trust{display:flex;justify-content:center;gap:2rem;padding:2rem;background:white;flex-wrap:wrap;font-weight:600}
-    .how,.categories,.testimonials{padding:5rem 5%;text-align:center}.how h2,.categories h2,.testimonials h2{font-size:2.4rem;margin-bottom:3rem}
+    .hero h1{font-size:2.8rem;margin-bottom:1rem}.highlight{color:#00ba7c}.hero-buttons{margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap}
+    .btn-large{padding:15px 30px;border-radius:12px;font-size:1.1rem;text-decoration:none;display:inline-block}.primary{background:#00ba7c;color:white}.secondary{background:transparent;border:2px solid white;color:white}
+    .hero-img{width:100%;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+    .trust{display:flex;justify-content:center;gap:2rem;padding:2rem;background:white;flex-wrap:wrap;font-weight:600;font-size:1.1rem}
+    .how,.categories,.testimonials{padding:5rem 5%;text-align:center}.how h2,.categories h2,.testimonials h2{font-size:2.4rem;margin-bottom:3rem;color:#333}
     .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}.step{background:white;padding:2rem;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
-    .num{font-size:3rem;color:#00ba7c;font-weight:bold}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
+    .num{font-size:3rem;color:#00ba7c;font-weight:bold;display:block;margin-bottom:0.5rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
     .card,.tcard{background:white;padding:2rem;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1);text-align:center;transition:0.3s}
-    .card:hover{transform:translateY(-10px)}footer{background:#1a1a1a;color:white;padding:4rem 5% 2rem}
-    .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-    .copy{text-align:center;margin-top:2rem;opacity:0.7}
-    @media(max-width:768px){.hero{grid-template-columns:1fr;text-align:center}.hero h1{font-size:2.2rem}.nav-links{display:none}}
+    .card:hover,.tcard:hover{transform:translateY(-10px)}
+    footer{background:#1a1a1a;color:white;padding:4rem 5% 2rem}
+    .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-bottom:2rem}
+    .copy{text-align:center;opacity:0.7}
+    @media(max-width:768px){.hero{grid-template-columns:1fr;text-align:center;padding:3rem 2%}.hero h1{font-size:2.2rem}.nav-links{display:none}.trust{gap:1rem;font-size:1rem;justify-content:center}}
   </style>
 </head>
 <body>
   <nav class="navbar">
     <div class="logo">
-      <svg viewBox="0 0 180 60"><path fill="#1a5fb4" d="M20 10 L20 50 L40 45 L60 50 L60 10 Z M25 15 L55 15 L55 40 L25 40 Z"/>
-      <text x="70" y="38" font-family="Poppins" font-weight="700" font-size="26" fill="#1a1a1a">BookValue</text>
-      <text x="142" y="38" fill="#00ba7c" font-size="26" font-weight="900">₹</text></svg>
+      <svg viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#1a5fb4" d="M20 10 L20 50 L40 45 L60 50 L60 10 Z M25 15 L55 15 L55 40 L25 40 Z"/>
+        <text x="70" y="38" font-family="Poppins" font-weight="700" font-size="26" fill="#1a1a1a">BookValue</text>
+        <text x="142" y="38" fill="#00ba7c" font-size="26" font-weight="900">₹</text>
+      </svg>
     </div>
     <div class="nav-links">
       <a href="#how">How it Works</a>
-      <a href="#">Sell Books</a>
-      <a href="#">Contact</a>
+      <a href="#categories">Categories</a>
+      <a href="#contact">Contact</a>
       <button class="btn-primary">Post a Book</button>
     </div>
   </nav>
@@ -42,38 +47,88 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Buy & Sell Old Books<br>at the <span class="highlight">Lowest Prices</span> in India</h1>
-      <p>Trusted by 50,000+ students • 100% safe & secure</p>
+      <p>Trusted by 50,000+ students & book lovers | 100% safe & secure transactions</p>
       <div class="hero-buttons">
-        <a href="#" class="btn-large primary">Sell Your Books</a>
-        <a href="#" class="btn-large secondary">Browse Books</a>
+        <a href="#sell" class="btn-large primary">Sell Your Books</a>
+        <a href="#browse" class="btn-large secondary">Browse Books</a>
       </div>
     </div>
-    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600" alt="Books" class="hero-img">
+    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600&fit=crop" alt="Stack of old books" class="hero-img">
   </section>
 
   <section class="trust">
-    <div>100% Secure Payments</div>
-    <div>Verified Sellers</div>
-    <div>Free Pickup</div>
-    <div>4.9/5 Reviews</div>
+    <div>🔒 100% Secure Payments</div>
+    <div>✅ Verified Sellers</div>
+    <div>🚚 Free Pickup (select cities)</div>
+    <div>⭐ 4.9/5 from 12,000+ reviews</div>
   </section>
 
   <section id="how" class="how">
     <h2>How BookValue Works</h2>
     <div class="steps">
-      <div class="step"><span class="num">1</span><h3>Post Your Book</h3><p>in 60 seconds</p></div>
-      <div class="step"><span class="num">2</span><h3>Get Offers</h3><p>on WhatsApp</p></div>
-      <div class="step"><span class="num">3</span><h3>Ship or Meet</h3><p>your choice!</p></div>
+      <div class="step">
+        <span class="num">1</span>
+        <h3>Post Your Book</h3>
+        <p>Upload photos & set your price in 60 seconds</p>
+      </div>
+      <div class="step">
+        <span class="num">2</span>
+        <h3>Get Offers</h3>
+        <p>Buyers contact you directly via WhatsApp/chat</p>
+      </div>
+      <div class="step">
+        <span class="num">3</span>
+        <h3>Ship or Meet</h3>
+        <p>Courier or local meetup – your choice!</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <div class="footer-content">
-      <div><h3>BookValue ₹</h3><p>India’s #1 old books marketplace</p></div>
-      <div><p>support@bookvalue.in<br>WhatsApp +91 98765 43210</p></div>
+  <section id="categories" class="categories">
+    <h2>Popular Categories</h2>
+    <div class="grid">
+      <div class="card">Engineering Books</div>
+      <div class="card">Medical & Nursing</div>
+      <div class="card">UPSC & Govt Exams</div>
+      <div class="card">Novels & Literature</div>
+      <div class="card">School Textbooks</div>
+      <div class="card">Entrance Exams (JEE/NEET)</div>
     </div>
-    <p class="copy">© 2025 BookValue</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="grid">
+      <div class="tcard">
+        <p>"Sold my entire B.Tech semester books in 2 days! Got ₹4,500"</p>
+        <strong>- Rohan, Mumbai</strong>
+      </div>
+      <div class="tcard">
+        <p>"Bought NEET books at 80% discount. Super trusted platform!"</p>
+        <strong>- Priya, Delhi</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-content">
+      <div>
+        <h3>BookValue ₹</h3>
+        <p>India's most trusted platform to buy & sell old books</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#how">How it Works</a><br>
+        <a href="#categories">Categories</a><br>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>support@bookvalue.in</p>
+        <p>WhatsApp: +91 98765 43210</p>
+      </div>
+    </div>
+    <p class="copy">© 2025 BookValue. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
